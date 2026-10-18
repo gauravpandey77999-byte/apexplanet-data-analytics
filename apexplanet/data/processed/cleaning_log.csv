@@ -1,0 +1,11 @@
+no,step,detail,rows_affected
+1,Rename columns,Converted all column names to lowercase snake_case,21
+2,Remove duplicates,Dropped duplicate rows / duplicate customer_id,0
+3,Fix dtype,total_charges: text -> float (blank strings became NaN),11
+4,Fix dtype,senior_citizen: 0/1 -> No/Yes for consistency,7043
+5,Fix dtype,Converted 17 text columns to category,7043
+6,Missing values,"total_charges NaN with tenure==0 filled with 0 (new customers, not yet billed)",11
+7,Feature,"Created churn_flag (1 = churned, 0 = stayed)",7043
+8,Outliers (IQR),"tenure: 0 values outside [-60.0, 124.0] - kept (valid business values)",0
+9,Outliers (IQR),"monthly_charges: 0 values outside [-46.0, 171.4] - kept (valid business values)",0
+10,Outliers (IQR),"total_charges: 0 values outside [-4683.5, 8868.7] - kept (valid business values)",0
