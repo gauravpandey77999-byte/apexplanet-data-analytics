@@ -105,5 +105,5 @@ export DB_URL=postgresql+psycopg2://user:password@localhost:5432/telco
 (On Windows: `set DB_URL=...`.)
 
 ## Author
-[Your Name]
+Gaurav Pandey
 Apexplanet Software Pvt. Ltd. Internship
