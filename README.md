@@ -59,9 +59,9 @@ apexplanet-data-analytics/
 | Task 2 | SQL query files (.sql) | `sql/01_setup.sql`, `sql/02_queries.sql`, `sql/03_views_indexes.sql` |
 | Task 2 | Python script for DB connection | `scripts/db_utils.py` |
 | Task 2 | Notebook with SQL + Python integration | `notebooks/02_sql_basics_beginner.ipynb` |
-| Task 3 | Dashboards | `dashboards/` (coming) |
-| Task 4 | Statistical models and forecasts | `notebooks/` (coming) |
-| Task 5 | Final report, automation, README | `reports/`, `scripts/` (coming) |
+| Task 3 | Dashboards | `dashboards/`  |
+| Task 4 | Statistical models and forecasts | `notebooks/`  |
+| Task 5 | Final report, automation, README | `reports/`, `scripts/`  |
 
 ## Task Status
 - [x] Task 1: Setup, cleaning and EDA
