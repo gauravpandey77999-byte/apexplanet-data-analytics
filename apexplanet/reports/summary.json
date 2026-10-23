@@ -1,0 +1,202 @@
+{
+  "kpis": {
+    "customers": 7043,
+    "churned": 1869,
+    "churn_rate_pct": 26.54,
+    "avg_monthly_charges": 64.76,
+    "total_revenue": 16056168.7,
+    "median_tenure_months": 29.0,
+    "monthly_revenue_at_risk": 139130.85
+  },
+  "tests": {
+    "chi2_contract": {
+      "chi2": 1184.6,
+      "dof": 2,
+      "p": 5.863038300673391e-258
+    },
+    "chi2_internet_service": {
+      "chi2": 732.3,
+      "dof": 2,
+      "p": 9.571788222840544e-160
+    },
+    "chi2_payment_method": {
+      "chi2": 648.1,
+      "dof": 3,
+      "p": 3.6823546520097993e-140
+    },
+    "chi2_senior_citizen": {
+      "chi2": 159.4,
+      "dof": 1,
+      "p": 1.510066805092378e-36
+    },
+    "ttest_monthly_charges": {
+      "t": 18.41,
+      "p": 8.592449331547067e-73,
+      "mean_churn": 74.44,
+      "mean_stay": 61.27
+    },
+    "ttest_tenure": {
+      "t": -34.82,
+      "p": 1.195494547260576e-232,
+      "mean_churn": 17.98,
+      "mean_stay": 37.57
+    }
+  },
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.74,
+      "precision": 0.507,
+      "recall": 0.786,
+      "f1": 0.616,
+      "roc_auc": 0.841
+    },
+    "Decision Tree": {
+      "accuracy": 0.735,
+      "precision": 0.5,
+      "recall": 0.807,
+      "f1": 0.618,
+      "roc_auc": 0.831
+    }
+  },
+  "importance": {
+    "contract_Two year": 0.405,
+    "contract_One year": 0.253,
+    "internet_service_Fiber optic": 0.112,
+    "tenure": 0.095,
+    "streaming_movies_Yes": 0.034,
+    "total_charges": 0.027,
+    "payment_method_Electronic check": 0.021,
+    "monthly_charges": 0.019,
+    "internet_service_No": 0.015,
+    "phone_service_Yes": 0.014
+  },
+  "segments": [
+    {
+      "segment": 0,
+      "customers": 1703,
+      "avg_tenure": 10.21,
+      "avg_monthly": 31.78,
+      "churn_rate": 25.0
+    },
+    {
+      "segment": 1,
+      "customers": 1904,
+      "avg_tenure": 59.53,
+      "avg_monthly": 93.31,
+      "churn_rate": 15.0
+    },
+    {
+      "segment": 2,
+      "customers": 2276,
+      "avg_tenure": 15.42,
+      "avg_monthly": 80.78,
+      "churn_rate": 48.0
+    },
+    {
+      "segment": 3,
+      "customers": 1160,
+      "avg_tenure": 53.57,
+      "avg_monthly": 34.91,
+      "churn_rate": 5.0
+    }
+  ],
+  "segment_tables": {
+    "contract": [
+      {
+        "contract": "Month-to-month",
+        "customers": 3875,
+        "churn_rate": 42.7
+      },
+      {
+        "contract": "One year",
+        "customers": 1473,
+        "churn_rate": 11.3
+      },
+      {
+        "contract": "Two year",
+        "customers": 1695,
+        "churn_rate": 2.8
+      }
+    ],
+    "internet_service": [
+      {
+        "internet_service": "DSL",
+        "customers": 2421,
+        "churn_rate": 19.0
+      },
+      {
+        "internet_service": "Fiber optic",
+        "customers": 3096,
+        "churn_rate": 41.9
+      },
+      {
+        "internet_service": "No",
+        "customers": 1526,
+        "churn_rate": 7.4
+      }
+    ],
+    "payment_method": [
+      {
+        "payment_method": "Bank transfer (automatic)",
+        "customers": 1544,
+        "churn_rate": 16.7
+      },
+      {
+        "payment_method": "Credit card (automatic)",
+        "customers": 1522,
+        "churn_rate": 15.2
+      },
+      {
+        "payment_method": "Electronic check",
+        "customers": 2365,
+        "churn_rate": 45.3
+      },
+      {
+        "payment_method": "Mailed check",
+        "customers": 1612,
+        "churn_rate": 19.1
+      }
+    ],
+    "senior_citizen": [
+      {
+        "senior_citizen": "No",
+        "customers": 5901,
+        "churn_rate": 23.6
+      },
+      {
+        "senior_citizen": "Yes",
+        "customers": 1142,
+        "churn_rate": 41.7
+      }
+    ],
+    "paperless_billing": [
+      {
+        "paperless_billing": "No",
+        "customers": 2872,
+        "churn_rate": 16.3
+      },
+      {
+        "paperless_billing": "Yes",
+        "customers": 4171,
+        "churn_rate": 33.6
+      }
+    ],
+    "tech_support": [
+      {
+        "tech_support": "No",
+        "customers": 3473,
+        "churn_rate": 41.6
+      },
+      {
+        "tech_support": "No internet service",
+        "customers": 1526,
+        "churn_rate": 7.4
+      },
+      {
+        "tech_support": "Yes",
+        "customers": 2044,
+        "churn_rate": 15.2
+      }
+    ]
+  }
+}
